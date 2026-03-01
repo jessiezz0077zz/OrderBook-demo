@@ -5,6 +5,7 @@ import { formatPrice } from '../utils/formatHelper';
 import { useSocketStore } from '../stores/socketStore';
 import { usePriceStore } from '../stores/priceStore';
 import { useOrderBookStore } from '../stores/orderBookStore';
+import SvgIcon from './SvgIcon.vue';
 
 useSocketStore();
 const { currentPrice, colorStyle } = storeToRefs(usePriceStore());
@@ -16,8 +17,7 @@ const { asks, bids } = storeToRefs(useOrderBookStore());
     <h2 class="orderbook__title">Order Book</h2>
     <QuoteTable showHead quoteType="sell" :quoteData="asks" />
     <p class="orderbook__price" :class="colorStyle">{{ formatPrice(currentPrice) }}
-      <font-awesome-icon icon="fa-solid fa-arrow-up" v-if="colorStyle === 'higher'" />
-      <font-awesome-icon icon="fa-solid fa-arrow-down" v-if="colorStyle === 'lower'" />
+      <SvgIcon v-if="colorStyle" name="arrow-down" class="arrow" :class="{ 'arrow--up': colorStyle === 'higher' }" />
     </p>
     <QuoteTable :showHead="false" quoteType="buy" :quoteData="bids" />
   </section>
@@ -54,6 +54,17 @@ const { asks, bids } = storeToRefs(useOrderBookStore());
 .orderbook__price.lower {
   color: $color-sell;
   background-color: $color-bg-sell;
+}
+
+.arrow {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.arrow--up {
+  transform: rotate(180deg);
 }
 
 @media only screen and (min-width: 375px) {

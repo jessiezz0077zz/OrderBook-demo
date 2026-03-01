@@ -6,7 +6,7 @@ Original Requirements: [Order Book](https://serious-lynx-a67.notion.site/Order-B
 
 Last Update: 2023/7/28 *Update market symbol `BTC-PERP` → `BTCPFC`
 
-<video src="public/demo.mov" controls width="100%"></video>
+[demo.mov](public/demo.mov)
 
 ![demo.png](public/demo.png)
 
@@ -48,6 +48,10 @@ Endpoint: `wss://ws.btse.com/ws/futures`
 Topic: `tradeHistoryApi:BTCPFC`
 
 API doc: https://btsecom.github.io/docs/futures/en/#public-trade-fills
+
+### Icon
+
+![arrow-down](src/assets/svg-icon/arrow-down.svg)
 
 ### Styles
 
