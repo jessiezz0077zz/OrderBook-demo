@@ -55,13 +55,13 @@ API doc: https://btsecom.github.io/docs/futures/en/#public-trade-fills
 
 ### Styles
 
-Background color: `#131B29`
-Default text color: `#F0F4F8`
-Quote table head text color: `#8698aa`
-Buy quote price text color: `#00b15d`
-Sell quote price text color: `#FF5B5A`
-Quote row hover background color: `#1E3059`
-Buy quote accumulative total size bar color: `rgba(16, 186, 104, 0.12)`
-Sell quote accumulative total size bar color: `rgba(255, 90, 90, 0.12)`
-Animation flash green background color: `rgba(0, 177, 93, 0.5)`
+Background color: `#131B29`  
+Default text color: `#F0F4F8`  
+Quote table head text color: `#8698aa`  
+Buy quote price text color: `#00b15d`  
+Sell quote price text color: `#FF5B5A`  
+Quote row hover background color: `#1E3059`  
+Buy quote accumulative total size bar color: `rgba(16, 186, 104, 0.12)`  
+Sell quote accumulative total size bar color: `rgba(255, 90, 90, 0.12)`  
+Animation flash green background color: `rgba(0, 177, 93, 0.5)`  
 Animation flash red background color: `rgba(255, 91, 90, 0.5)`
